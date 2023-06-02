@@ -1,0 +1,10 @@
+<%= link_to "Back to index", users_path %>
+
+<h1>Question number <%= @question_number %></h1>
+
+<%= @question.question %>
+
+<%= form_for :validate, url: validate_user_question_path(params[:user_id]), method: :post do |f| %>
+  <%= f.text_field :user_answer, label: "Your answer", autofocus: true %>
+  <%= f.submit "Submit" %>
+<% end %>

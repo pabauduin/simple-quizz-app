@@ -1,0 +1,6 @@
+<h1>Users#index</h1>
+
+<%= simple_form_for :user, url: users_path, method: :get do |f| %>
+  <%= f.input :username, label: "Username" %>
+  <%= f.button :submit, "Find or Create User" %>
+<% end %> 
