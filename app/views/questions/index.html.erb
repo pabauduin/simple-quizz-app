@@ -3,7 +3,7 @@
 <h1>Questionnaire K1000</h1>
 
 <% @categories.each do |category| %>
-  <h3><%= "#{category} (#{Question.where(category: category).where(user_id: params[:user_id]).where(success: true).count}/#{Question.where(category: category).count})" %></h3>
+  <h3><%= "#{category} (#{Question.where(category: category).where(user_id: params[:user_id]).where(success: true).count}/#{Question.where(category: category).where(user_id: params[:user_id]).count})" %></h3>
   <% Question.where(category: category).where(user_id: params[:user_id]).each do |question| %>
     <ul>
       <% if question.success == true %>
