@@ -36,3 +36,5 @@
 
 # Ignore personal questions
 /app/data/questions.json
+/app/assets/builds/*
+!/app/assets/builds/.keep

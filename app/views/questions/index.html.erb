@@ -5,3 +5,18 @@
     <%= flash[:success] %>
   </div>
 <% end %>
+
+<h2>List of questions</h2>
+
+<% @categories.each do |category| %>
+  <h3><%= "#{category} (#{Question.where(category: category).where(user_id: params[:user_id]).where(success: true).count}/#{Question.where(category: category).count})" %></h3>
+  <% Question.where(category: category).where(user_id: params[:user_id]).each do |question| %>
+    <ul>
+      <% if question.success == true %>
+        <li>✅ <%= question.question %></li>
+      <% else %>
+        <li><%= link_to question.question, user_question_path(user_id: params[:user_id], id: question.id) %></li>
+      <% end %>
+    </ul>
+  <% end %>
+<% end %>
