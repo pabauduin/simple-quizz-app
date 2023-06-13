@@ -9,6 +9,13 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+# dotenv
+gem 'dotenv-rails'
+
+#pg
+group :development, :test do
+  gem 'sqlite3'
+end
 gem 'pg', group: :production
 
 # Use the Puma web server [https://github.com/puma/puma]
