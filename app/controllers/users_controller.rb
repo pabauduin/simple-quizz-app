@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       create_questions
-      redirect_to user_question_path(user_id: @user.id, id: define_first_answered_question)
+      redirect_to user_questions_path(user_id: @user.id)
       flash[:success] = "User created successfully!"
     elsif !@user.nil?
       redirect_to user_question_path(user_id: @user.id, id: define_first_answered_question)
@@ -35,9 +35,13 @@ class UsersController < ApplicationController
 
     puts json_data.entries
 
-    json_data.entries.each do |question, answer|
-      @question = Question.new(user_id: @user.id, question: question, "answer": answer, "success": "false")
-      @question.save
+    json_data.entries.each do |question_list|
+      category_name = question_list[0]
+      questions = question_list[1]
+      questions.each do |question, answer|
+        @question = Question.new(user_id: @user.id, question: question, category: category_name, answer: answer, success: "false")
+        @question.save
+      end
     end
   end
 
