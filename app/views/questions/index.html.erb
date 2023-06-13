@@ -1,3 +1,5 @@
+<%= link_to "Back to homepage", root_path %>
+
 <h1>Questionnaire K1000</h1>
 
 <% if flash[:success] %>
@@ -5,8 +7,6 @@
     <%= flash[:success] %>
   </div>
 <% end %>
-
-<h2>List of questions</h2>
 
 <% @categories.each do |category| %>
   <h3><%= "#{category} (#{Question.where(category: category).where(user_id: params[:user_id]).where(success: true).count}/#{Question.where(category: category).count})" %></h3>
@@ -19,4 +19,5 @@
       <% end %>
     </ul>
   <% end %>
+  <hr>
 <% end %>
