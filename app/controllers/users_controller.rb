@@ -6,7 +6,6 @@ class UsersController < ApplicationController
       if user
         redirect_to user_questions_path(user)
       else
-        flash[:notice] = "User not found."
         create
       end
     end

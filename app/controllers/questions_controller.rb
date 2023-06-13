@@ -1,8 +1,6 @@
 class QuestionsController < ApplicationController
   def index
-    user = User.find(params[:user_id])
     @categories = Question.all.pluck(:category).uniq
-    redirect_to root_path if user.score == "max"
   end
 
   def show
