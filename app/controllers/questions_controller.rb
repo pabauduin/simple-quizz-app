@@ -7,7 +7,6 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find(params[:id])
-    @question_number = define_question_number
     if @question.success == true
       redirect_to user_question_path(user_id: params[:user_id], id: define_first_unanswered_question)
     end
@@ -31,11 +30,6 @@ class QuestionsController < ApplicationController
 
   def define_number_of_questions
     Question.all.where(user_id: params[:user_id]).count()
-  end
-
-  def define_question_number 
-    remaining_questions = Question.where(user_id: params[:user_id]).where(success: false).count()
-    (define_number_of_questions  - remaining_questions) + 1
   end
 
   def define_first_unanswered_question
