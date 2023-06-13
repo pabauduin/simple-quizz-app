@@ -1,0 +1,18 @@
+{
+      "Camille": {
+            "What is the capital of Spain?": "Madrid",
+            "Which planet is known as the 'Red Planet'?": "Mars",
+            "Who painted the Mona Lisa?": "Da Vinci"
+      },
+      "Damme": {
+            "What is the capital of France?": "Paris",
+            "Which planet is known as the 'Red Planet'?": "Mars",
+            "Who painted the Mona Lisa?": "Da Vinci"
+            
+      },
+      "Bruges": {
+            "What is the capital of Belgium?": "Bruxelles",
+            "Which planet is known as the 'Red Planet'?": "Mars",
+            "Who painted the Mona Lisa?": "Da Vinci"
+      }
+}
