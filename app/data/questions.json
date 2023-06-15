@@ -1,18 +1,29 @@
 {
       "Camille": {
-            "What is the capital of Spain?": "Madrid",
-            "Which planet is known as the 'Red Planet'?": "Mars",
-            "Who painted the Mona Lisa?": "Da Vinci"
+            "Date de naissance de Céleste format JJMMAAAA": "27022023",
+            "Cocktail préféré de Camille en 5 lettres": "ginto",
+            "Toc linguistique de Camille (O____ __ _____)": "ouais si ouais",
+            "Il est tombé dedans": "trou",
+            "Prénom du mentor de Camille chez Axa": "Valentin"
       },
-      "Damme": {
-            "What is the capital of France?": "Paris",
-            "Which planet is known as the 'Red Planet'?": "Mars",
-            "Who painted the Mona Lisa?": "Da Vinci"
-            
+      "Damme: Interdiction de chercher en ligne, réponse IRL": {
+            "Créature sur le toit du moulin":"sirène",
+            "Signification de Damme": "endiguement",
+            "Qu'est-ce qui était transporté à Damme par voie fluviable et qui commence par un H": "Hareng",
+            "Qu'est-ce qui était transporté à Damme par voie fluviable et qui commence par un V": "Vin",
+            "Qu'est-ce qui était transporté à Damme par voie fluviable et qui commence par un G": "Goudron",
+            "En flamand, nom du bateau qui nous emmène à Bruges, signifiant Bateau à Aubes": "Lamme Goedzak",
+            "Prénom de la personnalité la plus connue de Damme, même s'il ne vient pas de là": "jean-claude"
       },
       "Bruges": {
-            "What is the capital of Belgium?": "Bruxelles",
-            "Which planet is known as the 'Red Planet'?": "Mars",
-            "Who painted the Mona Lisa?": "Da Vinci"
+            "Nom complet du peintre qui est une statue, sur la place du même nom":"jan van eyck",
+            "Ville pas très loin de Carnin qu'on peut trouver pas loin du peintre": "béthune",
+            "Brasserie lunaire": "de halve maan",
+            "Un couple en a chié une place du bourg": "grenouille",
+            "Bière de bruges en 3 lettres": "zot",
+            "Quatres lettres dans le dos de Simon": "SPQB",
+            "Nombre d'abris sur la place Walpein": "10",
+            "Il y en a à Bruges, dont une qui vole près des abris": "calèche",
+            "Nom de la statue devant le théatre": "Papageno"
       }
 }
